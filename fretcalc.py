@@ -101,7 +101,7 @@ class App(Frame):
                                           Dec2Frac(results[fret]["string_remainder"],self.fraction_size.get()),
                                           Dec2Frac(results[fret]["total_dist_from_nut"],self.fraction_size.get())))
     def about(self):
-        messagebox.showinfo("About","FretCalc\nBy Blake Garretson\n\xA9 2001")
+        messagebox.showinfo("About","FretCalc\nBy Blake Garretson\n\xA9 2001-2022")
 
 def Dec2Frac(x, largest_denominator=32):
     largest_denominator=int(largest_denominator)
