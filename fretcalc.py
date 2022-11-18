@@ -1,6 +1,6 @@
 import sys
-from Tkinter import *
-import tkMessageBox
+from tkinter import *
+from tkinter import messagebox
 
 #options:
 #num_of_frets=30
@@ -101,7 +101,7 @@ class App(Frame):
                                           Dec2Frac(results[fret]["string_remainder"],self.fraction_size.get()),
                                           Dec2Frac(results[fret]["total_dist_from_nut"],self.fraction_size.get())))
     def about(self):
-        tkMessageBox.showinfo("About","FretCalc\nBy Blake Garretson\n\xA9 2001")
+        messagebox.showinfo("About","FretCalc\nBy Blake Garretson\n\xA9 2001")
 
 def Dec2Frac(x, largest_denominator=32):
     largest_denominator=int(largest_denominator)
